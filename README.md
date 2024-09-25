@@ -50,8 +50,9 @@ Declare the `DISCORD_WEBHOOK_URL` as [a netlify build setting](https://docs.netl
 
 [build.environment]
   DISCORD_WEBHOOK_URL = "https://discord.com/your-webhook-url"
+  DISCORD_NOTIFY_CONTEXT = "production deploy-preview branch-deploy" # or "all". If not set, it defaults to "all"
 ```
 
-Or, declare the `DISCORD_WEBHOOK_URL` environment variable [using the Netlify dashboard](https://docs.netlify.com/configure-builds/environment-variables/#declare-variables).
+Or, declare the `DISCORD_WEBHOOK_URL` and/or `DISCORD_NOTIFY_CONTEXT` environment variable [using the Netlify dashboard](https://docs.netlify.com/configure-builds/environment-variables/#declare-variables).
 
 Happy building!
