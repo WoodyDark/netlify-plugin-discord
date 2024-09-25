@@ -1,6 +1,6 @@
 {
   "name": "@woodydark/netlify-plugin-discord",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Netlify Build plugin - Discord webhook notifications",
   "main": "lib/index.js",
   "files": [
