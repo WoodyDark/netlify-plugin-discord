@@ -1,0 +1,50 @@
+{
+  "name": "@pendle/netlify-plugin-discord",
+  "version": "0.0.11",
+  "description": "Netlify Build plugin - Discord webhook notifications",
+  "main": "lib/index.js",
+  "files": [
+    "lib",
+    "manifest.yml"
+  ],
+  "keywords": [
+    "netlify-plugin",
+    "netlify",
+    "discord"
+  ],
+  "author": "Kelly Mears <hello@kellymears.me>, WoodyDark <donotemail@example.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kellymears/netlify-plugin-discord.git"
+  },
+  "pre-commit": [
+    "package-check"
+  ],
+  "scripts": {
+    "package-check": "run-s lint format",
+    "lint": "eslint ./lib/*.js",
+    "format": "prettier ./lib/*.js --write"
+  },
+  "dependencies": {
+    "axios": "^0.21.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.19.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-promise": "^4.2.1",
+    "npm-run-all": "^4.1.5",
+    "pre-commit": "^1.2.2",
+    "prettier": "^2.1.2"
+  },
+  "engines": {
+    "node": ">=10.22.0"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "homepage": "https://github.com/WoodyDark/netlify-plugin-discord#readme",
+  "packageManager": "yarn@4.5.0"
+}
